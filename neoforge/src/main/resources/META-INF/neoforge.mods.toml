@@ -1,0 +1,46 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "faster_climbing"
+version = "${version}"
+displayName = "Faster Climbing"
+authors = "ENC_Euphony"
+description = '''
+The climbing speed now depends on your viewpoint orientation
+'''
+logoFile = "icon.png"
+
+[[dependencies.faster_climbing]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.faster_climbing]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.faster_climbing]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.faster_climbing]]
+modId = "yet_another_config_lib_v3"
+mandatory = true
+type = "required"
+versionRange = "[3.6,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[mixins]]
+config = "faster_climbing.mixins.json"

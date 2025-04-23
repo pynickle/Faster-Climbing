@@ -1,0 +1,14 @@
+{
+  "yacl3.config.faster_climbing:config": "Faster Climbing",
+
+  "yacl3.config.faster_climbing:config.category.faster_climbing": "Faster Climbing",
+
+  "yacl3.config.faster_climbing:config.enableFasterClimbing": "Enable Faster Climbing",
+  "yacl3.config.faster_climbing:config.enableFasterClimbing.desc": "The speed at which you climb the ladder now changes depending on your viewpoint orientation when you're on the ladder.",
+  "yacl3.config.faster_climbing:config.enableFasterUpward": "Enable Faster Upward",
+  "yacl3.config.faster_climbing:config.enableFasterUpward.desc": "Whether to enable faster upward laddering.",
+  "yacl3.config.faster_climbing:config.enableFasterDownward": "Enable Faster Downward",
+  "yacl3.config.faster_climbing:config.enableFasterDownward.desc": "Whether to enable faster downward laddering.",
+  "yacl3.config.faster_climbing:config.speedMultiplier": "Speed Multiplier",
+  "yacl3.config.faster_climbing:config.speedMultiplier.desc": "Speed multiplier, multiplied by the angle sin value, 2.0 corresponds to 30 degrees for the original speed."
+}

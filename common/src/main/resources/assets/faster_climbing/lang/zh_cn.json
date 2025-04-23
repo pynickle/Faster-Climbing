@@ -1,0 +1,14 @@
+{
+  "yacl3.config.faster_climbing:config": "更快的爬梯",
+
+  "yacl3.config.faster_climbing:config.category.faster_climbing": "更快的爬梯",
+
+  "yacl3.config.faster_climbing:config.enableFasterClimbing": "启用更快的爬梯",
+  "yacl3.config.faster_climbing:config.enableFasterClimbing.desc": "现在，你爬梯子的速度会根据你在梯子上时的视角方向而改变。",
+  "yacl3.config.faster_climbing:config.enableFasterUpward": "启用更快的向上爬梯",
+  "yacl3.config.faster_climbing:config.enableFasterUpward.desc": "是否启用更快的向上爬梯。",
+  "yacl3.config.faster_climbing:config.enableFasterDownward": "启用更快的向下爬梯",
+  "yacl3.config.faster_climbing:config.enableFasterDownward.desc": "是否启用更快的向下爬梯。",
+  "yacl3.config.faster_climbing:config.speedMultiplier": "速度乘量",
+  "yacl3.config.faster_climbing:config.speedMultiplier.desc": "速度乘量，乘以角度 sin 值，2.0 相当于 30 度为原始速度。"
+}

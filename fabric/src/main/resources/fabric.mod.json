@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "faster_climbing",
+  "version": "${version}",
+  "name": "Faster Climbing",
+  "description": "The climbing speed now depends on your viewpoint orientation",
+  "authors": [
+    "ENC_Euphony"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/faster_climbing/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.euphony.faster_climbing.fabric.FasterClimbingFabric"
+    ],
+    "client": [
+      "com.euphony.faster_climbing.fabric.client.FasterClimbingFabricClient"
+    ],
+    "modmenu": [
+      "com.euphony.faster_climbing.fabric.integration.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "faster_climbing.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*",
+    "yet_another_config_lib_v3": ">=3.6"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
