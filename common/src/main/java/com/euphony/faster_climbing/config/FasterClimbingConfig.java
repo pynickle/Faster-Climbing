@@ -61,7 +61,7 @@ public class FasterClimbingConfig {
                             () -> config.speedMultiplier,
                             newVal -> config.speedMultiplier = newVal)
                     .controller(opt -> DoubleSliderControllerBuilder.create(opt)
-                            .range(1.0, 10.0).step(0.5))
+                            .range(1.0, 30.0).step(0.5))
                     .build();
 
             return builder
