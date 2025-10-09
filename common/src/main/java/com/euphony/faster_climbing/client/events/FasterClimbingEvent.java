@@ -8,7 +8,7 @@ import net.minecraft.world.phys.Vec3;
 public class FasterClimbingEvent {
 
     public static void playerPre(Player player) {
-        if(!player.level().isClientSide) return;
+        if(!player.level().isClientSide()) return;
 
         if (player.onClimbable() && !player.isCrouching()) {
             Climber climber = new Climber(player);
