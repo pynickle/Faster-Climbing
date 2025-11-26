@@ -17,7 +17,7 @@ public class FasterClimbingEvent {
                     && !climber.isMovingForward() && !climber.isMovingBackward()) {
                 climber.moveDownFaster();
             } else if (FasterClimbingConfig.HANDLER.instance().enableFasterUpward && climber.isFacingUpward()
-                    && climber.isMovingForward()) {
+                    && (climber.isMovingForward() || player.isJumping())) {
                 climber.moveUpFaster();
             }
         }
