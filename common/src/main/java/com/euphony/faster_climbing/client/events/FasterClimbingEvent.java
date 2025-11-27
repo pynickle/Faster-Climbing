@@ -3,6 +3,7 @@ package com.euphony.faster_climbing.client.events;
 import com.euphony.faster_climbing.config.FasterClimbingConfig;
 import net.minecraft.world.entity.MoverType;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.phys.Vec3;
 
 public class FasterClimbingEvent {
@@ -10,15 +11,17 @@ public class FasterClimbingEvent {
     public static void playerPre(Player player) {
         if(!player.level().isClientSide()) return;
 
-        if (player.onClimbable() && !player.isCrouching()) {
+        if (player.onClimbable()) {
             Climber climber = new Climber(player);
 
-            if (FasterClimbingConfig.HANDLER.instance().enableFasterDownward && climber.isFacingDownward()
-                    && !climber.isMovingForward() && !climber.isMovingBackward()) {
-                climber.moveDownFaster();
-            } else if (FasterClimbingConfig.HANDLER.instance().enableFasterUpward && climber.isFacingUpward()
-                    && (climber.isMovingForward() || player.isJumping())) {
-                climber.moveUpFaster();
+            if ((!player.isCrouching() && !player.getInBlockState().is(Blocks.SCAFFOLDING)) || player.getInBlockState().is(Blocks.SCAFFOLDING)) {
+                if (FasterClimbingConfig.HANDLER.instance().enableFasterDownward && climber.isFacingDownward()
+                        && !climber.isMovingForward() && !climber.isMovingBackward()) {
+                    climber.moveDownFaster();
+                } else if (FasterClimbingConfig.HANDLER.instance().enableFasterUpward && climber.isFacingUpward()
+                        && (climber.isMovingForward() || player.isJumping())) {
+                    climber.moveUpFaster();
+                }
             }
         }
     }
