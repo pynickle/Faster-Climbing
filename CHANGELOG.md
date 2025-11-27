@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/pynickle/Faster-Climbing/compare/v1.0.0...v1.1.0) (2025-11-27)
+
+### ✨ Features
+
+* add support to scaffolding down ([19eb547](https://github.com/pynickle/Faster-Climbing/commit/19eb5473f3d7061864b98df2a1a1a47b89c80775))
+
 ## 1.0.0 (2025-11-26)
 
 ### ✨ Features
