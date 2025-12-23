@@ -1,3 +1,13 @@
+## [2.0.0](https://github.com/pynickle/Faster-Climbing/compare/v1.1.0...v2.0.0) (2025-12-23)
+
+### ⚠ BREAKING CHANGES
+
+* port to 1.21.11
+
+### ✨ Features
+
+* port to 1.21.11 ([7858cf4](https://github.com/pynickle/Faster-Climbing/commit/7858cf47687e0851fd56d16744e42f5d94f36883))
+
 ## [1.1.0](https://github.com/pynickle/Faster-Climbing/compare/v1.0.0...v1.1.0) (2025-11-27)
 
 ### ✨ Features
